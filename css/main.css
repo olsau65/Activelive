@@ -1,0 +1,484 @@
+/* ------ Specification ------ */
+
+body {
+	font: 400 14px 'Open Sans', sans-serif;
+	background-color: #fff;
+	color: #000;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0.0em;
+}
+
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+	margin: 0;
+	line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+    padding: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+h2, h3 {
+	text-transform: none;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+h5 {
+	font-size: 13px;
+	font-weight: 400;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active {
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.btn {
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #fff;
+	border: 2px solid transparent;
+	border-radius: 2px;
+	text-align: center;
+	display: block;
+	width: 200px;
+	padding: 12px 0;
+	font-weight: 700;
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: #e84545;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+/* ---- First screen ---- */
+
+.header {
+	padding: 29px 0 244px;
+	background: #f1f2fd url(../img/main-bg.png) no-repeat center top / cover;
+	color: #fff;
+}
+
+.logo {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.logo span {
+	font-weight: 700;
+	color: #626fe4;
+}
+
+.navigation {
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.menu__item:last-child .menu__link {
+	padding-right: 0;
+}
+
+.menu__link {
+	padding: 0 33px 38px;
+	border-bottom: 3px solid transparent;
+}
+
+.menu__link:hover {
+	border-bottom: 3px solid rgba(255,255,255,0.5);
+}
+
+.offer {
+	margin-top: 30px;
+	text-align: center;
+    border-top: 1px solid #3f3f49;
+    padding-top: 177px;
+}
+
+.offer__title {
+	margin-bottom: 34px;
+}
+
+.offer__subtitle {
+	font-size: 22px;
+	margin: 0 auto 28px;
+	max-width: 556px;
+}
+
+.offer__btn {
+	margin: 0 auto;
+	background-color: #e84545;
+}
+
+/* ------ Section Advantages ------ */
+
+.advantages {
+	padding: 120px 0 27px;
+}
+
+.key {
+	text-align: center;
+	margin: 0 auto 72px;
+	max-width: 307px;
+}
+
+.key__title {
+	margin-top: 30px;
+	margin-bottom: 19px;
+}
+
+/* ------ Section Portfolio ------ */
+
+.portfolio {
+	padding: 24px 0 104px;
+}
+
+.gallery {
+	position: relative;
+	transition: all 0.5s ease;
+	margin-bottom: 26px;
+}
+
+.gallery__overlay {
+	background-color: rgba(232,69,69,0.9);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery:hover .gallery__overlay  {
+	opacity: 1;
+}
+
+.gallery__title {
+	margin-bottom: 10px;
+}
+
+/* ------ Section Staff ------ */
+
+.staff {
+	padding: 124px 0 92px;
+	background-color: #f1f2fd; 
+}
+
+.person {
+	margin-bottom: 26px;
+}
+
+.person__img {
+	margin-bottom: 27px;
+}
+
+.person__name {
+	margin-bottom: 8px;
+}
+
+.person__title {
+	margin-bottom: 22px;
+	color: #e84545;
+}
+
+.contact {
+	margin-top: 25px;	
+}
+
+.contact__item:not(:last-child) {
+	margin-right: 4px;
+}
+
+.contact__link {
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact__link:hover {
+	box-shadow: inset 0px 0px 5px rgba(0,0,0,0.25);
+}
+
+/* ------ Section Susan ------ */
+
+.workspace {
+	background: url('../img/girls.png') no-repeat right top / cover;
+	height: 100%;
+}
+
+.wrapper {
+	background-color: #53354a;
+	padding: 128px 0 136px 35px;
+	color: #fff;
+}
+
+.quote {
+	max-width: 510px;
+}
+
+.quote__text {
+	font-size: 36px;
+	line-height: 1.2em;
+	margin-bottom: 29px;
+}
+
+.quote__author {
+	font-size: 13px;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+/* ------ Section Download ------ */
+
+.download {
+	padding: 94px 0 100px;
+}
+
+.cta {
+	text-align: center;
+}
+
+.cta__title {
+	margin-bottom: 10px;
+}
+
+.cta__subtitle {
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+}
+
+.cta__btn {
+	max-width: 278px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #e84545;
+	border: 2px solid #e84545;
+	border-radius: 4px;
+}
+
+/* ----- Footer ---- */
+
+.footer {
+	padding: 83px 0 58px;
+	color: #fff;
+	background-color: #3a3e64;
+	text-align: center;
+	box-shadow: inset 0 -12px #313454;
+}
+
+.chart {
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.chart_location {
+	max-width: 155px;
+}
+
+.chart_love {
+	max-width: 326px;
+}
+
+.chart_about {
+	max-width: 342px;
+}
+
+.chart__title {
+	margin-bottom: 14px;
+}
+
+.chart__text {
+	color: rgba(255,255,255,0.5);
+}
+
+.chart__text_mix {
+	color: #808080;
+}
+
+.red {
+	color: red;
+}
+
+.white {
+	color: white;
+}
+
+/* ------ Media Queries ------ */
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+	.logo {
+		display: block;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	
+	.header {
+		padding-bottom: 130px;
+	}
+
+	.offer {
+		border-top: none;
+		padding-top: 0px;
+		margin-top: 130px;
+	}
+
+	.gallery__img {
+		margin: 0 auto;
+	}
+
+	.workspace {
+		height: 500px;
+	}
+
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-height: 300px;
+	}
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+	.header {
+		padding-bottom: 80px;
+	}
+	
+	.offer {
+		margin-top: 20px;
+	}
+
+	.advantages {
+		padding: 60px 0 14px;
+	}
+
+	.key {
+		margin: 0 auto 40px;
+	}
+
+	.portfolio {
+		padding: 24px 0 42px;
+	}
+
+	.staff {
+		padding: 62px 0 26px;
+	}
+	
+	.person {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	.person__img {
+	    margin: 0 auto 27px;
+	}
+
+	.contact {
+		justify-content: center;
+	}
+
+	.download {
+		padding: 70px 0;
+	}
+
+	.cta {
+		max-width: 350px;
+		margin: 0 auto;
+	}
+
+	.chart {
+		margin-bottom: 30px;
+	}
+
+	.footer {
+		padding: 50px 0 40px;
+	}
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	h3 {
+		font-size: 21px;
+	}
+
+	.offer {
+		margin-top: 20px;
+	}
+
+	.offer__subtitle {
+		font-size: 18px;
+	}
+
+	.workspace {
+		height: 250px;
+	}
+
+	.quote__text {
+		font-size: 26px;
+	}
+}
